@@ -14,3 +14,9 @@ navItems.forEach((v, i, arr) => {
         btn.classList.add('active');
     });
 });
+
+
+const herointro = "Hi, I'm Martin Gebiertas"
+
+
+
