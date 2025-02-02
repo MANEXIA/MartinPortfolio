@@ -47,6 +47,8 @@ li{
     background-color: #1f2022;
     display: flex;
     flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 }
@@ -55,10 +57,10 @@ li{
     user-select: none;
     list-style: none;
     font-size: 1.2rem;
-    margin: 10px;
-    padding: 5px;
+    padding: 15px;
+    height: fit-content;
     cursor: pointer;
-    font-weight: 500;
+    font-weight: bold;
     transition:all ease 0.3s; /* Smooth color change */
 }
 
