@@ -206,7 +206,7 @@ li{
     /* box-shadow: inset 0px 0px 29px 12px rgba(0,0,0,0.1); */
 }
 .techTitle{
-    font-size: 2rem;
+    font-size: 3rem;
     color: #FFFF00;
     align-self: center;
     width: 50%;
@@ -234,7 +234,7 @@ li{
     width: max-content;
     padding: 10px;
     margin: 10px;
-    font-size: 1.18rem;
+    font-size: 1.8rem;
 }
 
 .techCategory ul{
@@ -244,6 +244,7 @@ li{
 }
 
 .techCategory ul li{
+    font-size: 1.3rem;
     margin: 10px;
 }
 
@@ -263,16 +264,17 @@ li{
 
 .projects-row{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr);
     height: 100%;
     gap: 20px;
-    width: 75%;
+    width: 50%;
 }
 
 .project-item{
     display: flex; 
-    
+    background-color: #FFFF00;
+    flex-direction: column;
     gap: 20px;
 }
 .project-item p{
@@ -283,7 +285,7 @@ li{
 }
 
 .project-item img{
-    width: 30%;
+    width:100%;
     height: auto;
     
 }
