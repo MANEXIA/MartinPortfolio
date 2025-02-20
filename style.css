@@ -38,6 +38,7 @@ body{
     padding: 0;
     margin: 0;
     width: 100%;
+    /* position: relative; */
     min-height: 100vh; 
     background-color: #131214;
     display: flex;
@@ -58,9 +59,11 @@ li{
     list-style: none;
 }
 #header-nav{
-    position: sticky;
+    /* position: sticky;
+    top: 0;
+    z-index: 1000; */
     width: 100%;
-    height: 10vh;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -261,11 +264,14 @@ li{
     justify-content: center;
     padding: 20px;
 }
-
+.projects-title{
+    color: #FFFF00;
+    font-size: 3rem;
+}
 .projects-row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-rows: auto;
     height: 100%;
     gap: 20px;
     width: 50%;
@@ -273,26 +279,32 @@ li{
 
 .project-item{
     display: flex; 
-    background-color: #FFFF00;
+    color: #1f2022;
+    background-color: #1f2022;
+    border-radius: 24px 24px 24px 24px;
     flex-direction: column;
-    gap: 20px;
+    height: fit-content;
 }
 .project-item p{
+    color: #ffffff;
     width: auto;
-    border:2px solid rebeccapurple;
-    font-size: 1.8rem;
-    padding: 20px;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+
+.project-item h1{
+    padding: 10px;
+    color:#FFFF00;
 }
 
 .project-item img{
-    width:100%;
-    height: auto;
+    border-radius: 24px 24px 24px 24px;
+    width:95%;
+    margin: 10px;
     
 }
 
-.projects h1{
-    margin:50px 0px 50px 0px;
-}
+
 
 
 
