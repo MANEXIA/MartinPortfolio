@@ -63,30 +63,40 @@ li{
     top: 0;
     z-index: 1000; */
     width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(31, 32, 34, 0.36);
 }
 
+
+
 #header-nav ul{
-    background-color: #1f2022;
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     height: fit-content;
-    align-items: center;
+    justify-content: space-around;
     /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px; */
 }
 
+.logo-name{
+    font-size: 1.5rem;
+    color: #FFFF00;
+    padding-left: 10px;
+    align-self: center;
+}
+
 .nav-item{
     /* font-family: monospace; */
+    text-align: center;
+    /* max-width: 25%; */
     user-select: none;
     list-style: none;
     font-size: 1.2rem;
-    padding: 10px;
-    margin: 15px;
-    height: fit-content;
+    padding:10px;
+    margin: 15px 0px 15px 0px;
     cursor: pointer;
     transition:all ease 0.3s; /* Smooth color change */
 }
@@ -117,10 +127,10 @@ li{
 } */
 
 .profile{
-    background: url(./img/headerbg.svg);
+    /* background: url(./img/headerbg.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
     
     display: flex;
     flex-direction: column;
@@ -131,15 +141,13 @@ li{
     min-height: 500px;
 }
 
-.profile-row{
-    position: relative;
-    
+.profile-row{   
     min-width: 300px;
     max-width: 50%;
     height: auto;
     min-height: 350px;
 
-    padding: 20px;
+    
     display: flex;
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: #1f2022;
@@ -150,12 +158,8 @@ li{
 }
 
 .profile-row img{
-    position: relative;
-    top: -100px;
-    left: -50px;
     max-width: 50%;
-    height: auto;
-    transform: rotateY(180deg);
+    /* transform: rotateY(180deg); */
     /* filter: grayscale(100%);  */
     transition: filter 0.3s ease; 
 }
@@ -165,10 +169,11 @@ li{
 }
 
 .profile-intro {
+    margin: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    font-size: 1.8rem;
 }
 
 .profile-intro p:first-child{
@@ -186,7 +191,8 @@ li{
 }
 
 .hero-name{
-    font-size: 2.4rem; 
+    font-size: 2.5rem; 
+    color: #FFFF00;
     /* font-weight: bold; */
     margin-bottom: 10px;
     width: fit-content;  
@@ -201,6 +207,7 @@ li{
 .tech-skill{
     /* background-color: #1f2022; */
     border:3px #FFFF00 solid;
+    padding: 0;
     margin: 20px;
     display: flex;
     flex-direction: column;
