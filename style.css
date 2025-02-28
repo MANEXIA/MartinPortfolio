@@ -37,7 +37,8 @@ html {
 body{
     padding: 0;
     margin: 0;
-    width: 100%;
+    overflow-x: hidden;
+    width: 100vw;
     /* position: relative; */
     min-height: 100vh; 
     background-color: #131214;
@@ -112,13 +113,6 @@ li{
     color:#1f2022;
 }
 
-#my-content{
-    width: 100%;
-    height: 100%;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows:auto auto;
-}
 
 /* header{
     background: url(./img/headerbg.svg);
@@ -131,64 +125,53 @@ li{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center; */
-    
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    min-height: 500px;
 }
 
 .profile-row{   
-    min-width: 300px;
-    max-width: 50%;
+    /* width: 50%; */
+    max-width: fit-content;
     height: auto;
-    min-height: 350px;
-
-    
     display: flex;
+    flex-wrap: wrap;
     box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
     background-color: #1f2022;
-    /* 
-    box-shadow: 6px 4px 19px -3px rgb(86, 86, 87); 
-    border-radius: 25px; 
-    */
 }
 
-.profile-row img{
-    max-width: 50%;
-    /* transform: rotateY(180deg); */
-    /* filter: grayscale(100%);  */
-    transition: filter 0.3s ease; 
+.hero-img{
+    width: 50%;
+    min-width: 200px;
 }
 
-.profile-row img:hover {
-    filter: grayscale(100%); 
+.hero-img img{
+    width: 100%;
+    min-width: 300px;
+    height: 100%;
+    object-fit: cover;
 }
+
+.hero-img img:hover {filter: grayscale(100%); }
 
 .profile-intro {
-    margin: 10px;
+    width: 50%;
+    min-width: 300px;
+    /* min-width: 400px; */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 1.8rem;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    
 }
 
-.profile-intro p:first-child{
-    margin-bottom: 20px;
-}
-.profile-intro ul{
-   margin-bottom: 10px;
-   gap: 10px;
+.profile-intro ul   {
    display: flex;
+   flex-direction: column;
 }
 
-.profile-intro ul li{
-    font-size: 1.2rem;
-    margin:5px 15px 0px 0px;
-}
+
 
 .hero-name{
     font-size: 2.5rem; 
