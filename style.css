@@ -282,6 +282,19 @@ li{
    padding: 20px;
 }
 
+.cert-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* .cert-row{
+
+} */
+
+.cert-row p{ font-size: 1.6rem; color: var(--yellowMain);}
+
 
 
 
