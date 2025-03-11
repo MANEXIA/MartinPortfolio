@@ -258,10 +258,31 @@ li{
 .tech-skill-row{
     width: 50%;
     height: 100%;
+}
+
+.tech-skill-row .tech-skill-title{ font-size: 1.6rem; color: var(--yellowMain);}
+
+.skills-container{
+    margin-top: 20px;
+}
+.skills-title{
+    padding:10px 20px 10px 20px;
+    background-color: var(--yellowMain);
+    color: var(--bgDark);
+    width: fit-content;
+    font-weight: bold;
+}
+.skills-container ul{   
+    display: flex;
+    justify-content: space-around;
     background-color: var(--bgContainer);
 }
 
-.tech-skill-row p{ font-size: 1.6rem;}
+.skills-container ul li{
+   padding: 20px;
+}
+
+
 
 
 
