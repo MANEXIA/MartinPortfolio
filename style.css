@@ -292,9 +292,10 @@ li{
 }
 
 .cert-container{
-    display: flex;
+    display: flex;  
     flex-direction: column;
     justify-content: center;
+
 }
 
 /* .cert-row{
@@ -302,18 +303,6 @@ li{
 } */
 
 .cert-row p{ font-size: 1.6rem; color: var(--yellowMain); margin-top: 20px;}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -381,9 +370,11 @@ li{
     padding: 10px;
 }
 
-.project-item h1{
+.project-item p{
     padding: 10px;
+    font-size: 1.rem;
     color:#FFFF00;
+    text-align: center;
 }
 
 .project-item img{
@@ -398,6 +389,19 @@ li{
 
 
 
+
+.footer-container{
+    width: 100%;
+    max-width: 100vw;
+    height: 25vh;
+}
+
+
+.footer-row{
+    width: 100%;
+    height: 100%;
+    background-color: var(--bgContainer);
+}
 
 
 
