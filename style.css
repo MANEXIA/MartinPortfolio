@@ -322,10 +322,34 @@ li{
     padding: 20px;
 }
 .projects-title{
-    color: #FFFF00;
-    border-bottom:3px #FFFF00 solid;
-    font-size: 3rem;
+    color: var(--yellowMain); 
+    font-size: 3rem; 
+    width: 100%; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.projects-title::after{
+    position: absolute;
+    content: "";
+    width: 20%;
+    height: 4px;
+    background-color: var(--yellowMain);
+    left: 50%;
+    bottom: -10px;
+    transform: translate(-50%, 0);
+
+    
+    border-radius: 20px;
+    
+}
+
+
+
+
+
 .projects-row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
