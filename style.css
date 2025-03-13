@@ -407,7 +407,46 @@ li{
     width: 100%;
     height: 100%;
     background-color: var(--bgContainer);
+    
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
 }
+
+.footer-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content ul{
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
+}
+
+
+.footer-content ul li{
+    font-size: 1.8rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+.footer-content ul li::before{
+    content:"wow";
+    position: absolute;
+    left: 0;
+}
+
+.footer-content ul li:hover{
+    color: var(--yellowMain);
+    transform: translateY(-10px) scale(1.3);
+}
+
 
 
 
