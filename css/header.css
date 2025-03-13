@@ -46,11 +46,32 @@
     border: 3px solid var(--bgContainer);
     
     border-radius: 50px;
+
+    position: relative;
 }
 
-.nav-item:hover{
-    border: 3px solid var(--yellowMain);
+.nav-item::after{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;  
+    left: 0;
+    bottom: 0;
+    border:3px solid var(--yellowMain);
+    border-radius: 20px;
+    transition:all 0.3s ease;
+    transform: translateY(30px);
+    opacity: 0;
 }
+
+.nav-item:hover::after{
+    width: 100%;
+    opacity: 1;
+    transform: translateY(0);
+
+}
+
+
 
 .nav-item.active{
     font-weight: bold;
