@@ -1,3 +1,9 @@
+@import url("header.css");
+@import url("about.css");
+@import url("projects.css");
+@import url("profile.css");
+@import url("footer.css");
+
 /* Global Reset */
 *,
 *::before,
@@ -61,4 +67,6 @@ a{
 li{
     list-style: none;
 }
+
+
 
