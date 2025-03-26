@@ -132,7 +132,7 @@
         width: 35%;
     }
 
-    #header-nav ul.active{
+    #header-nav ul.show{
         right: 0;
     }
 

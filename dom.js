@@ -19,4 +19,9 @@ navItems.forEach((v, i, arr) => {
 const herointro = "Hi, I'm Martin Gebiertas"
 
 
+function showNav(){
+    document.getElementById('nav-btn').classList.add('show')
+}
+
+
 
