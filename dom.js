@@ -20,7 +20,12 @@ const herointro = "Hi, I'm Martin Gebiertas"
 
 
 function showNav(){
-    document.getElementById('nav-btn').classList.add('show')
+    document.getElementById('nav-ul').classList.add('show')
+}
+
+function closeNav(){
+    // alert("adasd")
+    document.getElementById('nav-ul').classList.remove('show')
 }
 
 

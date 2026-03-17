@@ -13,16 +13,15 @@
     box-sizing: border-box;
 }
 
-/* Global Settings */
-html {
-    scroll-behavior: smooth;
-}
-
 :root{
     --yellowMain: #FFFF00;
     --bgDark: #131214;
     --bgContainer: #1f2022;
 
+}
+/* Global Settings */
+html {
+    scroll-behavior: smooth;
 }
 
 /* Width and height of the scrollbar */

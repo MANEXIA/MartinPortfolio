@@ -57,11 +57,7 @@
     font-size: 1.2rem;
     padding:10px;
     cursor: pointer;
-    transition:all ease 0.3s; /* Smooth color change */
-    /* border: 3px solid var(--bgContainer); */
-    
     border-radius: 50px;
-
     position: relative;
 }
 
@@ -99,15 +95,7 @@
 }
 
 
-/* @media (min-width:775px) and (max-width: 1000px) {
 
-    #header-nav{
-        background-color: red;
-    }
-    .nav-item{
-        font-size: 1.1rem;
-    }
-} */
 
 @media (max-width: 1270px) {
 
@@ -130,10 +118,15 @@
         padding-top: 20px;
         padding-right: 0px;
         width: 35%;
+        transition:all 0.3s ease;
     }
 
     #header-nav ul.show{
         right: 0;
+    }
+
+    #header-nav ul li:nth-child(1){
+        padding: 10px;
     }
 
     .nav-item{
@@ -153,6 +146,7 @@
     .header-row button{
         display: block;
         margin-left: auto;
+        font-size: 1.5 rem;
     }
 
     
