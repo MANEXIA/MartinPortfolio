@@ -1,9 +1,6 @@
 @import url("header.css");
-@import url("about.css");
-@import url("projects.css");
-@import url("profile.css");
+@import url("main.css");
 @import url("footer.css");
-
 /* Global Reset */
 *,
 *::before,
@@ -14,58 +11,284 @@
 }
 
 :root{
-    --yellowMain: #FFFF00;
-    --bgDark: #131214;
-    --bgContainer: #1f2022;
-
+    --hero-font: serif, sans-serif;
+    --main-font: 'Inter', sans-serif;
+    --mainBackgroud: White;
+    --lightGreen: #8AC56F;
+    --darkGreen: #405D33;
+    --grid: rgba(36, 34, 34, 0.08);
+    --grid-size: 40px;
 }
+
 /* Global Settings */
 html {
     scroll-behavior: smooth;
 }
 
-/* Width and height of the scrollbar */
-::-webkit-scrollbar {
-    width: 5px;  /* Vertical scrollbar width */
-    height: 5px; /* Horizontal scrollbar height */
-}
-
-/* Track (background of the scrollbar) */
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-/* Handle (movable part of the scrollbar) */
-::-webkit-scrollbar-thumb {
-    background: var(--yellowMain);
-    border-radius: 5px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
 body{
-    padding: 0;
-    margin: 0;
+    position: relative;
+    width: 100%;
     min-height: 100vh; /* Ensures body takes up at least full screen height */
     overflow-x: hidden;
-    background-color: var(--bgDark);
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-family: 'Sono', 'Courier New', Courier, monospace;
-    /* font-family: Sono, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
-}
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header"
+    "main";
+    text-rendering: optimizeLegibility;
+    background-image:
+    linear-gradient(to right, var(--grid) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+    background-size: var(--grid-size) var(--grid-size);
+    font-family: var(--main-font);
 
+}
 
 a{
+    color: inherit;
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 }
+
+a:visited {
+  color: inherit;
+}
+
 li{
     list-style: none;
 }
 
 
+button{
+    background: none;
+    border: none;
+}
+
+
+
+
+
+@media (min-width: 300px) {  
+    /* sm */ 
+    .header-container{
+    /* background-color: rgba(63, 63, 63, 0.158); */
+    width: 90%;
+    min-height: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    }
+
+    .header-navs{margin-right: 0px;}
+    header p{
+    margin-left: 0px;
+    font-size: 1.8rem;
+    }
+
+    header ul{
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: row;
+        gap:35px;
+    }
+
+    header ul li span{
+       display: none;
+    }
+
+    header ul li .nav-icon{
+        display: inline-block;
+        font-size: 1.3rem;
+    }
+    header p{
+    font-size: 1.5rem;
+    color: var(--lightGreen);
+    }
+
+
+    .hero-section{
+    display: grid;
+    grid-template-rows: auto auto;
+
+    }
+
+    .img-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    }
+
+    .img-container img{
+    width: 250px;
+    height: auto;
+    border-radius: 50%;
+    }
+
+    .hero-name-container{
+    gap: 20px;     
+    margin-top: 30px;
+    margin-left: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    }
+
+    .hero-name-container ul{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .hero-name-container ul li{
+    font-size: 1.1rem;
+    /* background-color: var(--lightGreen); */
+    border: solid 2px var(--lightGreen);
+    padding: 5px 25px;
+    border-radius: 10px;
+
+}
+
+
+
+    .techskills-container ul{
+    gap: 15px;
+    
+    }
+
+    .featured-projects{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: auto;
+    }
+
+    .switch{
+    position: absolute;
+    right: -10px;
+    top: -40px;
+    } 
+
+
+    
+
+}
+
+@media (min-width: 620px) {
+    /* sm */
+     .header-container{
+    /* background-color: rgba(63, 63, 63, 0.158); */
+    width: 90%;
+    min-height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    position: relative;
+    }
+    .featured-projects{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto;
+    }
+
+    .hero-name-container ul li{
+    padding: 10px 35px;
+    }
+
+    .switch{
+    position: relative;
+    right: 0;
+    top: 0;
+    } 
+
+
+}
+
+@media (min-width: 768px) {  
+    .img-container img{
+    width: 350px;
+    }
+    
+    /* md */
+
+
+}
+
+@media (min-width: 1070px) { 
+    /* lg */
+    header ul li span{display: inline-block;}
+    header ul li .nav-icon{display: none;}
+
+    header ul li{
+    font-size: 1.1rem;
+    }
+
+    header p{
+    font-size: 1.5rem;
+    color: var(--lightGreen);
+    }
+
+    .hero-section{
+    display: grid;
+    grid-template-columns: 350px auto;
+    }
+
+    .img-container{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 100%;
+    }
+    .img-container img{
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .hero-name-container{
+        margin-left: 50px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        text-align: left;
+    }
+
+    .techskills-container ul{
+    gap: 20px;
+    
+    }
+
+    .featured-projects{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+
+
+}
+   
+@media (min-width: 1280px) { 
+    /* xl */ 
+    header p{
+    font-size: 1.5rem;
+    color: var(--lightGreen);
+    }
+
+    .header-container{
+    /* background-color: rgba(63, 63, 63, 0.158); */
+    width: 1200px;
+    }
+    
+    .techskills-container ul{
+    gap: 25px;
+    
+    }
+
+
+}
 

@@ -1,186 +1,139 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="Author" content="MG"> 
-    <title>Matin G. Portfolio</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/13091db6b9.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Sono:wght@300;400;700&display=swap" rel="stylesheet">
+    <meta name="Author" content="MG">
+    <meta name="description" content="Front-End Developer Portfolio of Martin Gebiertas">
+
+    <title>Martin Portfolio 2026</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/global.css">
-   
-</head>
-<script src="dom.js" defer></script>
-<body>
+    <script src="https://kit.fontawesome.com/13091db6b9.js" crossorigin="anonymous"></script>
 
-    <!-- <i class="fa-solid fa-bars"></i> -->
-
-    <!-- <i class="fa-regular fa-circle-left"></i> -->
-    <div id="header-nav">
-        <div class="header-row">
-            <div>
-                <p class="logo-name">MARTS</p>
-            </div>
-        
-            <ul id="nav-ul">
-                <li><button onclick="closeNav()"><i class="fa-regular fa-circle-xmark"></i></button></li>
-                <li class="nav-item">Home</li>
-                <li class="nav-item">About</li>
-                <li class="nav-item">Projects</li>
-                <li class="nav-item">Resume</li>
-            </ul>
-
-            <button onclick="showNav()"><i class="fa-solid fa-bars"></i></button>
-        </div>
-    </div> 
-        
+  </head>
+  <body>
     <header>
-   
-       <div class="profile">
-        <div class="profile-row">
+        <div class="header-container">
+            <p>M<span class="logo-art">ART</span>S</p>
 
-            <div class="hero-img">
-                <img src="img/prof.svg" alt="profile">
-            </div>
-    
-            <div class="profile-intro">
+            <div class="header-navs"> 
                 <ul>
-                    <li>Hi, I’m</li>
-                    <li>Martin Gebiertas</li>
-                    <li>IT Student</li>
+                    <li class="nav-link active"><a href="#"><i class="fa-regular fa-circle-user nav-icon"></i><span>About me</span></a></li>
+                    <li class="nav-link active"><a href="#"><i class="fa-solid fa-code nav-icon"></i><span>Projects</span></a></li>
+                    <li class="nav-link active"><a href="#"><i class="fa-solid fa-bars-progress nav-icon"></i><span>Contact me</span></a></li>
                 </ul>
-
-                <div class="profile-link">
-                    <a href=""><span class="list-icon-space"><i class="fa-brands fa-github" ></i></span>GitHub</a>
-                    <a href=""><span class="list-icon-space"><i class="fa-brands fa-linkedin" ></i></span>LinkedIn</a>
-                </div>
-    
-            </div>
-
-        
+                <div class="switch"><button class="switch-btn-light"><i class="fa-regular fa-sun"></i></button> </div>
+          </div>
         </div>
-       </div>   
-   
 
     </header>
-  
- 
-         <div class="tech-skill">
-             <div class="tech-row">
-                
-                         
-                <div class="about-me-container">
-                    <div class="about-me-row ">
-                        <h1>About me</h1>
-                        <p>-Motivated Information Technology student with a strong foundation in web development and basic experience in Android development. Eager to apply my skills, gain hands-on experience, and continue developing my abilities in real-world projects</p>
-                    </div>
-                </div>
 
+    <main>
 
-
-                <div class="tech-skill-container">
-                    <div class="tech-skill-row">
-                        <p class="tech-skill-title">Tech Skills</p>
-                            <div class="skills-container">
-                                <p class="skills-title">Language</p>
-                                    <ul>
-                                        <li><i class="devicon-html5-plain colored"></i>HTML</li>
-                                        <li><i class="devicon-css3-plain colored"></i>CSS</li>
-                                        <li><i class="devicon-javascript-plain colored"></i>JS</li>
-                                        <li><i class="devicon-kotlin-plain colored"></i>KOTLIN</li>
-                                        <li><i class="devicon-azuresqldatabase-plain colored"></i>SQL</li>
-                                    </ul>
-                            </div>
-
-                                <div class="skills-container">
-                                    <p class="skills-title">Tools/IDE</p>
-                                    <ul>
-                                        <li>VS Code</li>
-                                        <li><i class="devicon-androidstudio-plain colored"></i>ANDROID STUDIO</li>
-                                            <li><i class="devicon-figma-plain colored"></i>FIGMA</li>
-                                        <li>Adobe Photoshop</li>
-                                    </ul>
-                                </div>
-                    </div>
-                </div>
-
-                <div class="cert-container">
-                    <div class="cert-row">
-                        <p>Certificates</p>
-
-                        
-
-
-
-
-                    </div>
-                   </div>
-
-               
-            
-             </div>  
-        </div>
-
-       <div class="projects">
-            <h1 class="projects-title">Projects</h1>
-                <div class="projects-row">
-                    
-                   <div class="project-item">
-                        <img src="img/dendrometryapp.png" alt="dendrometryapp" >
-                        <p>Dendrometry</p>
-                        <!-- <p>Android-based Tree Measurement Application for Classification and 
-                            Wood Volume Estimation in Samanea Saman and Gmelina Arborea 
-                            Species. (Kotlin, XML, SQLite)</p> -->
-                   </div>
-
-                   <div class="project-item">
-                    <img src="img/gggamers.png" alt="gg-gamers" >
-                    <p>GG-Gamers</p>
-                    <!-- <p>is a gaming website that brings together diverse gaming content, offering seamless exploration, interaction, and an engaging, user-friendly experience for gamers. (HTML,CSS, JS)</p> -->
-               </div>
-
-               <div class="project-item">
-                <img src="img/ojp1.png" alt="ojp" >
-                <p>Only Juan Platter</p>
-                <!-- <p>Android-based Tree Measurement Application for Classification and 
-                    Wood Volume Estimation in Samanea Saman and Gmelina Arborea 
-                    Species. (Kotlin, XML, SQLite)</p> -->
-           </div>
-
-           <div class="project-item">
-            <img src="img/uniadd.png" alt="UniAdd" >
-            <p>UNIAD</p>
-            <!-- <p>is a gaming website that brings together diverse gaming content, offering seamless exploration, interaction, and an engaging, user-friendly experience for gamers. (HTML,CSS, JS)</p> -->
-       </div>
-      
-                </div>
-        </div>
-
-        <div class="footer-container">
-            <div class="footer-row">
-
-                <div class="footer-content">
-                    <ul> 
-                        <li data-link="GitHub"><i class="fa-brands fa-github"></i></li>
-                        <li data-link="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></li>
-                        <li data-link="Facebook"><i class="fa-brands fa-facebook-f"></i></li>
-                        <li data-link="Instagram"><i class="fa-brands fa-instagram"></i></li>
-                    </ul>
-                    
-                </div>
-
-                <div class="footer-content">
-                    <p>© 2025 martsCodes. All rights reserved.</p>
-                </div>
-
-                
-            </div>
-        </div>
+      <div class="main-container">
        
 
-    
 
-</body>
+        <div class="hero-section">
+
+           <div class="img-container">
+             <img src="img/me.png" alt="martin">
+          </div>
+
+          <div class="hero-name-container">
+            <h1>Martin Gebiertas</h1>      
+            <p class="role">Graphic Designer | <span class="side-role">Front-End Developer</span></p>
+            <p class="intro">Fresh graduate aspiring front-end developer focused on building responsive, user-centered interfaces. Passionate about graphic design and creating clean, practical solutions to real-world problems.</p>
+      
+            
+            <ul>
+              <li><a href="">Github</a></li>
+              <li><a href="">LinkDn</a></li>
+              <li><a href="">Email</a></li>
+            </ul>
+
+          </div>
+
+        </div>
+
+        <div class="techskills-container">
+              <div class="techskills-intro">
+                <h2>Technical Skills</h2>
+                <p>Here are some of the technologies I have experience with:</p>
+              </div>
+        
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Git & GitHub</li>
+              <li>Responsive Design</li>
+              <li>Figma</li>
+              <li>Adobe Photoshop</li>
+              <li>Adobe Illustrator</li>
+              <li>Affinity Designer</li>
+              <li>Canva</li>
+            </ul>
+        </div>
+
+        <div class="projects-container">
+                <h2>Projects</h2>
+          <div class="featured-projects">
+
+
+            <div class="project-card">
+              <h3 class="project-title-green">Dendrometry  <span class="project-type-default">| Android Application</span></h3>
+              <p class="short-description">A Mobile Application for Estimating Tree Diameter and Height Using Gyroscope and Accelerometer Sensors with Trigonometric Computation.</p>
+              <ul class="techstack">
+                <li>Kotlin</li>
+                <li>NoSql</li>
+                <li>Android Studio</li>
+              </ul>
+            </div>
+
+             <div class="project-card">
+              <h3 class="project-title-green">GG-Gamers  <span class="project-type-default">| Web Application</span></h3>
+              <p class="short-description">A web application for gamers that allows users to find and browse games, read game reviews, and download them.</p>
+              <ul class="techstack">
+                <li>HTML5 & CSS3</li>
+                <li>Javascript</li>
+                <li>API</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+
+             <div class="project-card">
+              <h3 class="project-title-green">UNIADD  <span class="project-type-default">| Web Application</span></h3>
+              <p class="short-description">A web application for finding universities in Pampanga, with an account feature that lets users save and list their favorite universities.</p>
+              <ul class="techstack">
+                <li>HTML5 & CSS3</li>
+                <li>Javascript</li>
+                <li>PHP</li>
+                <li>VS Code</li>
+              </ul>
+            </div>
+
+
+
+          </div>
+          <button class="projects-seemore">See more</button>
+        </div>
+
+
+
+
+         
+
+
+
+
+       
+      </div>  
+    </main>
+
+
+    <script src="dom.js" defer></script>
+  </body>
 </html>
